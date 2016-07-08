@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level 1 Events</name>
+    <events>
+        <include>Wizard Events</include>
+        <event-block sid="1386713211850022">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8855515101687018" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4957535393087072" type="System">
+                    <param id="0" name="Variable">arrowtime</param>
+                    <param id="1" name="Value">1.45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9974226264249952">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="2563429479518352" type="Wizard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6293923923621661" type="System">
+                    <param id="0" name="Layout">Level 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="419897593167965">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5797994472586172" type="Enemy">
+                    <param id="0" name="Object">InvBlock</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="643878054654526" type="Enemy">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="4" name="Set animation" sid="304845566096289" type="Enemy">
+                    <param id="0" name="Animation">&quot;flip2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5804217856048272">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7904511462220539" type="Enemy">
+                    <param id="0" name="Object">InvBlock2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="911225982189086" type="Enemy">
+                    <param id="0" name="Angle">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="4883762891849604" type="Enemy">
+                    <param id="0" name="Animation">&quot;flip1&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="1230498109761112">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4667279490586396" type="Lighting">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9909184346896203" type="Enemy" />
+            </actions>
+        </event-block>
+        <event-block sid="6189887865746621">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1790295882649295" type="firbeall">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6323758693592214" type="Enemy" />
+                <action id="-9" name="Destroy" sid="4082990263864355" type="firbeall" />
+            </actions>
+        </event-block>
+        <event-block sid="2167051011530867">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="1971555122673614" type="Wizard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7440754007843798" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

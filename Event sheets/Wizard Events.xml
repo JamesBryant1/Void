@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Wizard Events</name>
+    <events>
+        <variable constant="0" name="Lives" sid="1641614231924597" static="0" type="number">15</variable>
+        <event-block sid="2682658724424782">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="3126883493732737" type="Wizard" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9646011465604081" type="Wizard">
+                    <param id="0" name="Animation">&quot;jumping&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3835748529349231">
+            <conditions>
+                <condition id="3" name="On key released" sid="5856254897568645" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7099042905146821" type="Wizard">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7136830092242765">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1685503305088216" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3147333972481442" type="Wizard">
+                    <param id="0" name="Animation">&quot;walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="611422852783857" type="Wizard">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Play" sid="2965203447111458" type="Audio">
+                    <param id="0" name="Audio file">running_feet_-Cam-942211296</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;feet&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8320777539796931">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="9610558554569657" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2417621907279915" type="Wizard">
+                            <param id="0" name="Animation">&quot;walking&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8991940062650291">
+            <conditions>
+                <condition id="3" name="On key released" sid="5234924829618087" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3988193391669082" type="Wizard">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="6" name="Stop" sid="4341129429547564" type="Audio">
+                    <param id="0" name="Tag">&quot;feet&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="9866452577762814">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5748293649078686" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1219662578396417" type="Wizard">
+                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="317137413910678">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8537478957477833" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6907494144150934" type="Wizard">
+                    <param id="0" name="Animation">&quot;walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="8487250415865262" type="Wizard">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="0" name="Play" sid="1670877598839832" type="Audio">
+                    <param id="0" name="Audio file">running_feet_-Cam-942211296</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;feet&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8161036770300094">
+            <conditions>
+                <condition id="3" name="On key released" sid="9582054746244712" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4468683044076438" type="Wizard">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="6" name="Stop" sid="2153087201982478" type="Audio">
+                    <param id="0" name="Tag">&quot;feet&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7329573588555801">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7482466644763633" type="Wizard">
+                    <param id="0" name="Object">lavapool</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="933447031132449" type="Wizard" />
+                <action id="0" name="Play" sid="7246303154556422" type="Audio">
+                    <param id="0" name="Audio file">Frying_Food-J_Bravo-1591470421</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-8</param>
+                    <param id="1" name="Tag (optional)">&quot;fry&quot;</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="5751653826741948" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4883743648156282">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5862232401631223" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="678631112825409" type="Wizard">
+                    <param id="0" name="Animation">&quot;LightningAttack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8702543198460031" type="Wizard">
+                    <param id="0" name="Animation">&quot;LightningAttack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="682699665618072" type="Wizard">
+                    <param id="0" name="Object">Lighting</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Play" sid="2532862072741079" type="Audio">
+                    <param id="0" name="Audio file">Thunder_HD-Mark_DiAngelo-587966950</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7950236242979643">
+            <conditions>
+                <condition id="4" name="On finished" sid="2982673326739685" type="Wizard">
+                    <param id="0" name="Animation">&quot;LightningAttack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2044542305329548" type="Wizard">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5125732928239625">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1579066856097032" type="Wizard">
+                    <param id="0" name="Object">endportal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="5294554693173522" type="Wizard">
+                    <param id="0" name="Fade-out time">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5377530039085947">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2934198557273425" type="Wizard">
+                    <param id="0" name="Object">Arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9170547723952588" type="Wizard" />
+                <action id="-11" name="Subtract from" sid="4551667837774262" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3110390081856587">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7728565290042897" type="Spike">
+                    <param id="0" name="Object">Wizard</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9128003143207139" type="Wizard" />
+                <action id="-11" name="Subtract from" sid="8317882599248591" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6503359335588111">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6648879059325252" type="Wizard">
+                    <param id="0" name="Object">buttonPlay</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6694156328359744" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8749975386019146">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2312852825571461" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7091084275491035" type="Wizard">
+                    <param id="0" name="Animation">&quot;FireAttack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7448366002978623" type="Wizard">
+                    <param id="0" name="Object">firbeall</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Play" sid="5887823930830209" type="Audio">
+                    <param id="0" name="Audio file">Small Fireball-SoundBible.com-1381880822</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4929530565042292">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9802642673707246" type="Arrow">
+                    <param id="0" name="Object">lavapool</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5344255991809162" type="Arrow" />
+            </actions>
+        </event-block>
+        <event-block sid="7549209907955408">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9349686188582842" type="System">
+                    <param id="0" name="Interval (seconds)">1.75</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="3950692901850329" type="arrowshooter">
+                    <param id="0" name="Object">Arrow</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="788175678228675">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7945668691385554" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+                <condition id="7" name="Is mirrored" sid="6123868980532077" type="Wizard" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7634293271638694" type="firbeall">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1019123802764688">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8744501867765032" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+                <condition id="7" name="Is mirrored" sid="1912751271902608" type="Wizard" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2076049261000387" type="Lighting">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2941397026193312">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5463920024614735" type="Wizard">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1134777774042971" type="Wizard" />
+                <action id="-11" name="Subtract from" sid="7585959821697929" type="System">
+                    <param id="0" name="Variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

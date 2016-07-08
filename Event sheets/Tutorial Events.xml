@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Tutorial Events</name>
+    <events>
+        <variable constant="0" name="arrowtime" sid="3157440879178531" static="0" type="number">2.5</variable>
+        <event-block sid="8206282137249775">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2281746373219038" type="System">
+                    <param id="0" name="Interval (seconds)">arrowtime</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="2601697695171705" type="arrowshooter">
+                    <param id="0" name="Object">Arrow</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
