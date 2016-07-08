@@ -747,6 +747,85 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite6" sid="1792299649887497">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="8064023965608492">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5293323202276269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Sprites\Project Sprites\dragon1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.455078" />
+                            <point x="0.693359" y="0.306641" />
+                            <point x="0.726563" y="0.5" />
+                            <point x="0.611328" y="0.611328" />
+                            <point x="0.5" y="0.699219" />
+                            <point x="0.308594" y="0.691406" />
+                            <point x="0.345703" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Sprites\Project Sprites\drasgon3.png">
+                        <collision-poly>
+                            <point x="0.478516" y="0.478516" />
+                            <point x="0.5" y="0.46875" />
+                            <point x="0.619141" y="0.380859" />
+                            <point x="0.869141" y="0.5" />
+                            <point x="0.605469" y="0.605469" />
+                            <point x="0.5" y="0.683594" />
+                            <point x="0.308594" y="0.691406" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Sprites\Project Sprites\dragon4.png">
+                        <collision-poly>
+                            <point x="0.478516" y="0.478516" />
+                            <point x="0.5" y="0.464844" />
+                            <point x="0.628906" y="0.371094" />
+                            <point x="0.742188" y="0.5" />
+                            <point x="0.683594" y="0.683594" />
+                            <point x="0.5" y="0.679688" />
+                            <point x="0.126953" y="0.873047" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Sprites\Project Sprites\dragon-2.png">
+                        <collision-poly>
+                            <point x="0.470703" y="0.470703" />
+                            <point x="0.5" y="0.451172" />
+                            <point x="0.617188" y="0.382813" />
+                            <point x="0.714844" y="0.5" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="0.689453" />
+                            <point x="0.134766" y="0.865234" />
+                            <point x="0.373047" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Sprites\Project Sprites\dragon-5.png">
+                        <collision-poly>
+                            <point x="0.451172" y="0.451172" />
+                            <point x="0.5" y="0.464844" />
+                            <point x="0.628906" y="0.371094" />
+                            <point x="0.755859" y="0.5" />
+                            <point x="0.949219" y="0.949219" />
+                            <point x="0.5" y="0.699219" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="6521231612059498">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9717028090535047" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Sprites\Project Sprites\background.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

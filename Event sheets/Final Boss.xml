@@ -2,5 +2,19 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Final Boss</name>
-    <events />
+    <events>
+        <include>Wizard Events</include>
+        <event-block sid="2404584000655367">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1171405191109851" type="Sprite6">
+                    <param id="0" name="Object">Brick</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="4" name="Bounce off object" sid="5363847028474007" type="Sprite6">
+                    <param id="0" name="Object">Brick</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
