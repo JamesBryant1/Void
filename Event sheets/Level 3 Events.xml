@@ -19,7 +19,7 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
-                <action id="-15" name="Set visible" sid="4113374031453667" type="Text5">
+                <action id="-15" name="Set visible" sid="4113374031453667" type="KeyTextLevel3">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
@@ -92,7 +92,7 @@
         </event-block>
         <event-block any="1" sid="5656004697525166">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9533954947726507" type="Lighting">
+                <condition id="0" name="On collision with another object" sid="9533954947726507" type="LightingAttack">
                     <param id="0" name="Object">Enemy</param>
                 </condition>
             </conditions>
@@ -102,23 +102,23 @@
         </event-block>
         <event-block sid="4890629755766268">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="3442915803450137" type="firbeall">
+                <condition id="0" name="On collision with another object" sid="3442915803450137" type="FireballAttack">
                     <param id="0" name="Object">Enemy</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="4814507965012938" type="Enemy" />
-                <action id="-9" name="Destroy" sid="2956854810219907" type="firbeall" />
+                <action id="-9" name="Destroy" sid="2956854810219907" type="FireballAttack" />
             </actions>
         </event-block>
         <event-block sid="6655725857167933">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="2494315276051058" type="firbeall">
+                <condition id="0" name="On collision with another object" sid="2494315276051058" type="FireballAttack">
                     <param id="0" name="Object">Brick</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="7418506608185048" type="firbeall" />
+                <action id="-9" name="Destroy" sid="7418506608185048" type="FireballAttack" />
             </actions>
         </event-block>
         <event-block sid="4197301294507814">
@@ -128,6 +128,29 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="5053112718655585" type="System">
                     <param id="0" name="Layout">Level 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6044111929214996">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="195449351982179" type="Wizard">
+                    <param id="0" name="Object">endportal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="2827600828973745" type="Wizard">
+                    <param id="0" name="Fade-out time">2</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="7770461403484935" type="Wizard" />
+            </actions>
+        </event-block>
+        <event-block sid="9304519055345764">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="5057059968569909" type="Wizard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4128532625936617" type="System">
+                    <param id="0" name="Layout">Final Boss</param>
                 </action>
             </actions>
         </event-block>

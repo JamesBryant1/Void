@@ -3,18 +3,15 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Tutorial Events</name>
     <events>
+        <include>Wizard Events</include>
         <variable constant="0" name="arrowtime" sid="3157440879178531" static="0" type="number">2.5</variable>
-        <event-block sid="8206282137249775">
+        <event-block sid="8700978827299157">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="2281746373219038" type="System">
-                    <param id="0" name="Interval (seconds)">arrowtime</param>
-                </condition>
+                <condition id="-19" name="On destroyed" sid="6255398846334213" type="Wizard" />
             </conditions>
             <actions>
-                <action id="0" name="Spawn another object" sid="2601697695171705" type="arrowshooter">
-                    <param id="0" name="Object">Arrow</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
-                    <param id="2" name="Image point">2</param>
+                <action id="-2" name="Go to layout" sid="4435845706642371" type="System">
+                    <param id="0" name="Layout">Tutorial</param>
                 </action>
             </actions>
         </event-block>

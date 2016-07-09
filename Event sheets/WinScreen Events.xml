@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>WinScreen Events</name>
+    <events>
+        <event-block sid="2353666440235668">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9025814647836758" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BackArrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2536825630745047" type="System">
+                    <param id="0" name="Layout">Title Screen</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="435486148462866">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7641165263562412" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BackButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7154212061722081" type="System">
+                    <param id="0" name="Layout">Title Screen</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

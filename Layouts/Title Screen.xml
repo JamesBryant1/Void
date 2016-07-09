@@ -69,7 +69,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="WhitePlay" uid="771">
+                <instance type="WhiteBoxTitleScreen" uid="771">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -110,33 +110,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="buttonTutorial" uid="42">
-                    <properties>
-                        <text>Tutorial</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Bauhaus 93,-48,400,0</font>
-                        <color>255,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1299</x>
-                        <y>666</y>
-                        <z>0</z>
-                        <width>173</width>
-                        <height>63</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="titleQuest" uid="38">
                     <properties>
                         <text>Quest</text>
@@ -182,10 +155,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1375</x>
-                        <y>607</y>
+                        <y>615.5</y>
                         <z>0</z>
                         <width>333</width>
-                        <height>183</height>
+                        <height>200</height>
                         <depth>0</depth>
                         <hotspotX>0.50181818</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -213,6 +186,60 @@
                         <z>0</z>
                         <width>534</width>
                         <height>199</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="buttonTutorial" uid="42">
+                    <properties>
+                        <text>Tutorial</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Bauhaus 93,-64,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1268</x>
+                        <y>673</y>
+                        <z>0</z>
+                        <width>264</width>
+                        <height>95</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CreditsTitlescreen" uid="1017">
+                    <properties>
+                        <text>Credits</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Bauhaus 93,-64,400,0</font>
+                        <color>255,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1271</x>
+                        <y>751</y>
+                        <z>0</z>
+                        <width>245</width>
+                        <height>76</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

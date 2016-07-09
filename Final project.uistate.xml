@@ -10,19 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Title Screen</layout>
-        <layout order="2">Tutorial</layout>
-        <layout order="4">Level 1</layout>
-        <layout order="6">Level 2</layout>
-        <layout order="8">Level 3</layout>
-        <layout active="1" order="11">Final Boss</layout>
-        <event-sheet order="1">Titlescreen Events</event-sheet>
-        <event-sheet order="3">Tutorial Events</event-sheet>
-        <event-sheet order="5">Level 1 Events</event-sheet>
-        <event-sheet order="7">Level 2 Events</event-sheet>
-        <event-sheet order="9">Level 3 Events</event-sheet>
-        <event-sheet order="10">Wizard Events</event-sheet>
-        <event-sheet order="12">Final Boss</event-sheet>
+        <layout active="1" order="0">Title Screen</layout>
+        <layout order="6">Tutorial</layout>
+        <layout order="1">Level 1</layout>
+        <layout order="2">Level 2</layout>
+        <layout order="3">Level 3</layout>
+        <layout order="4">Final Boss</layout>
+        <layout order="5">Credit Screen</layout>
+        <layout order="7">Win Screen</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -45,7 +40,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/lavapool/" />
         <folder expanded="1" path="animation-folder/arrowshooter/" />
         <folder expanded="1" path="animation-folder/Arrow/" />
-        <folder expanded="1" path="animation-folder/Level1Back/" />
+        <folder expanded="1" path="animation-folder/Level1Background/" />
         <folder expanded="1" path="animation-folder/Brick/" />
         <folder expanded="1" path="animation-folder/endportal/" />
         <folder expanded="1" path="animation-folder/Spike/" />
@@ -55,22 +50,29 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/greenLock/" />
         <folder expanded="1" path="animation-folder/blueLock/" />
         <folder expanded="1" path="animation-folder/yellowLock/" />
-        <folder expanded="1" path="animation-folder/WhitePlay/" />
+        <folder expanded="1" path="animation-folder/WhiteBoxTitleScreen/" />
         <folder expanded="1" path="animation-folder/Wizard/" />
-        <folder expanded="1" path="animation-folder/tutorialBack/" />
+        <folder expanded="1" path="animation-folder/tutorialBackground/" />
         <folder expanded="1" path="animation-folder/Cave2/" />
         <folder expanded="1" path="animation-folder/Cave3/" />
-        <folder expanded="1" path="animation-folder/Lighting/" />
-        <folder expanded="1" path="animation-folder/firbeall/" />
+        <folder expanded="1" path="animation-folder/LightingAttack/" />
+        <folder expanded="1" path="animation-folder/FireballAttack/" />
         <folder expanded="1" path="animation-folder/Enemy/" />
         <folder expanded="1" path="animation-folder/InvBlock/" />
         <folder expanded="1" path="animation-folder/InvBlock2/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/BossBackground/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Level2background/" />
+        <folder expanded="1" path="animation-folder/Level3Background/" />
+        <folder expanded="1" path="animation-folder/Dragon/" />
+        <folder expanded="1" path="animation-folder/DragonFireball/" />
+        <folder expanded="1" path="animation-folder/GameOver/" />
+        <folder expanded="1" path="animation-folder/WizardCreditScreen/" />
+        <folder expanded="1" path="animation-folder/WizardJumpAnimation/" />
+        <folder expanded="1" path="animation-folder/DragonHead/" />
+        <folder expanded="1" path="animation-folder/BackArrow/" />
+        <folder expanded="1" path="animation-folder/SorecerorEye/" />
+        <folder expanded="1" path="animation-folder/EmperorWizard/" />
+        <folder expanded="1" path="animation-folder/WinscreenBackground/" />
     </folders-expanded>
 </c2uistate>
