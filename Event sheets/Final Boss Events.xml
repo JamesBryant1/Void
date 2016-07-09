@@ -127,6 +127,9 @@
                     <param id="0" name="Variable">Lives</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="0" name="Set text" sid="5619038915830105" type="livesText">
+                    <param id="0" name="Text">&quot;Lives : &quot;&amp;Lives</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5388136923448986">
